@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+	<body style="background-color: green;">
+    <meta charset="utf-8">
+    <title>projekt na zaliczenie </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/core.css">
+    <link rel="stylesheet" href="style/vote.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+	     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.14.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.14.4/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+	</body>
+</head>
+
+<body>
+    <header>
+
+		
+      
+ <h1><p style="text-align: center">projekt na zaliczenie</p></h1>
+			
+        <nav>
+           
+        </nav>
+    </header>
+
+    <main>
+        <noscript>
+            <p>Ta aplikacja wymaga właczonego javascriptu.</p>
+        </noscript>
+        <div class="overlay" id="auth-overlay">
+<p style="text-align: center">
+            <form id="auth" class="surface">
+				
+                <h4><p style="text-align: center">Witaj na stronie która pozwoli Tobie stworzyć ankiete oraz w dowolny sposób edytować, dodwać czy też usuwać. Nie zapomnij dodwać swój pseudonim twórcy. Teraz możesz sie zalogować lub stworzyc swoje konto przy pomocy konta e-mial oraz hasła</p><</h4>
+				<img src="https://rekrutacja.cdv.pl/resources/gfx/spinner.gif/>
+                <div class="row">
+                    <label><p style="text-align: center">e-mail</label>
+                    <input type="email" name="email">
+					</p>
+                </div>
+    <p style="text-align: center">
+                <div class="row">
+                    <label><p style="text-align: center">haslo</label>
+                    <input type="password" name="password">
+					</p>
+                </div>
+                <div>
+					<p style="text-align: center">
+                    <button id="login"<button style="background-color: whitesmoke; font-face: Verdana; font-size: 18; color: blue; font-weight: bold">zaloguj</button>
+                    <button id="register"<button style="background-color: whitesmoke; font-face: Verdana; font-size: 18; color: blue; font-weight: bold">rejstracja</button>
+					
+					</p>
+                </div>
+            </form>
+
+        </div>
+<p style="text-align: center">
+        <div class="overlay" id="inquiry-overlay">
+
+            <form id="inquiry" class="surface">
+                <div class="row">
+                    <label>tytul</label>
+                    <input name="title">
+					</p>
+                </div>
+    
+                <div class="row">
+                    <label>tresc pytania</label>
+                    <input name="question">
+	                <div class="row">
+	                    <label>tworca</label>
+	                    <input name="question">
+    
+                    <ul id="questions"></ul>
+                    <button id="add-question"<button style="background-color: whitesmoke; font-face: Verdana; font-size: 18; color: blue; font-weight: bold">dodaj</button>
+					
+					
+                    <ul id="questions"></ul>
+                    <button style="background-color: whitesmoke; font-face: Verdana; font-size: 18; color: blue; font-weight: bold">edytuj pytanie</button>
+					
+                </div>
+
+                <button id="inquiry-submit"<button style="background-color: whitesmoke; font-face: Verdana; font-size: 18; color: blue; font-weight: bold">stworz</button>
+				</p>
+            </form>
+
+        </div>
+ <button id="inquiry-submit"<button style="background-color: whitesmoke; font-face: Verdana; font-size: 18; color: blue; font-weight: bold">usun</button>
+        <section id="inquiry-list">
+
+        </section>
+    
+		<a href="https://time.is/Wrocław" id="time_is_link" rel="nofollow" style="font-size:36px">Aktualny czas w Wrocław:</a>
+		<span id="_z733" style="font-size:36px"></span>
+		<script src="//widget.time.is/t.js"></script>
+		<script>
+		time_is_widget.init({_z733:{id:"Wrocław_z733"}});    
+<article class="clock">
+  <div class="hours-container">
+    <div class="hours"></div>
+  </div>
+  <div class="minutes-container">
+    <div class="minutes"></div>
+  </div>
+  <div class="seconds-container">
+    <div class="seconds"></div>
+  </div>
+</article>
+		</script>
+
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
+        <script src="script/index.js"></script>
+        <script src="script/user.js"></script>
+        <script src="script/database.js"></script>
+    </main>
+</p>
+    <footer>
+       
+    </footer>
+</body>
+
+</html>

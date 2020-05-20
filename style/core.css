@@ -1,0 +1,56 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header, footer {
+    background: rebeccapurple;
+    padding: 12px 24px;
+    color: #ffffff;
+}
+
+.surface {
+    padding: 24px;
+    background: #fff;
+}
+
+a, button, input, textarea {
+    border: 1px solid rebeccapurple;
+    background: none;
+    font-size: 16px;
+    padding: 8px 16px;
+}
+a, button {
+    border: 0;
+    color: rebeccapurple;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+a:hover, button:hover {
+    background: rebeccapurple;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav button {
+    background: rebeccapurple;
+    color: #fff;
+}
+
+nav button:hover {
+    color: rebeccapurple;
+    background: #fff;
+}
+
+h1 {
+    margin: 0;
+}
